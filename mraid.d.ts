@@ -135,11 +135,17 @@ interface MRAIDLocationState {
 	ipservice: string | undefined;
 }
 
-type MRAIDCalendarEvent = { [key: string]: any } & {
+type MRAIDCalendarEvent = {
+	id?: string;
 	description: string;
-	start: string;
-	end: string;
 	location?: string;
+	summary?: string;
+	start: string;
+	end?: string;
+	status?: string;
+	transparency?: string;
+	recurrence?: any;
+	reminder?: string;
 }
 
 // See VPAID 2.0 spec for further method definitions, but only the declared methods are required by MRAID Video Addendum

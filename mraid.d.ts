@@ -84,13 +84,15 @@ type MRAIDPlacementType = "inline" | "interstitial";
 
 type MRAIDState = "loading" | "default" | "expanded" | "resized" | "hidden";
 
+type MRAIDOrientation = "portrait" | "landscape";
+
 interface MRAIDOrientationProperties {
 	allowOrientationChange: boolean;
-	forceOrientation: "portait" | "landscape" | "none";
+	forceOrientation: MRAIDOrientation | "none";
 }
 
 interface MRAIDAppOrientationState {
-	orientation: "portrait" | "landscape";
+	orientation: MRAIDOrientation;
 	locked: boolean;
 }
 

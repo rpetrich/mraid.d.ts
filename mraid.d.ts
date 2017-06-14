@@ -53,12 +53,12 @@ type MRAIDVersion = "1.0" | "2.0" | "3.0";
 
 type MRAIDENVDeclaration = Readonly<{
 	version: MRAIDVersion;
-	sdk: string;
-	sdkVersion: string;
-	appId: string;
-	ifa: string;
-	limitAdTracking: boolean;
-	coppa: boolean;
+	sdk?: string;
+	sdkVersion?: string;
+	appId?: string;
+	ifa?: string;
+	limitAdTracking?: boolean;
+	coppa?: boolean;
 }>
 
 interface MRAIDEventHandlers {

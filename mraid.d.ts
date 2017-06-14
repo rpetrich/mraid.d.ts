@@ -121,7 +121,7 @@ type MRAIDResizeProperties = MRAIDSize & {
 }
 
 declare const enum MRAIDLocationType {
-	WiFi = 1,
+	LocationServices = 1,
 	IPGeoLocation = 2,
 	UserProvided = 3,
 }
